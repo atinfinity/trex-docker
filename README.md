@@ -31,6 +31,8 @@ jupyter lab --ip=0.0.0.0 --no-browser
 
 Please open `notebooks/api-examples.ipynb` in Jupyter Lab.
 
+![](image/api-examples.png)
+
 ## Reference
 
 - <https://developer.nvidia.com/blog/exploring-tensorrt-engines-with-trex/>
