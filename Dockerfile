@@ -4,7 +4,7 @@ ARG UID=1000
 ARG GID=1000
 
 # add new sudo user
-ENV USERNAME trt
+ENV USERNAME trex
 ENV HOME /home/$USERNAME
 RUN useradd -m $USERNAME && \
         echo "$USERNAME:$USERNAME" | chpasswd && \
@@ -32,6 +32,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         build-essential \
         git \
         git-lfs \
+        python3-dev \
         python3-pip \
         python3-venv \
         libgl1-mesa-dev \
