@@ -51,10 +51,12 @@ RUN python3 -m venv env_trex && \
     git clone https://github.com/NVIDIA/TensorRT.git -b 23.08 && \
     cd TensorRT/tools/experimental/trt-engine-explorer && \
     sed -i 's/jupyterlab/jupyterlab==3.6.5/g' requirements.txt && \
+    sed -i 's/dtale==2.2.0/dtale==3.3.0/g' requirements.txt && \
     echo "Werkzeug==2.2.3" >> requirements.txt && \
     echo "xarray==2022.3.0" >> requirements.txt && \
     echo "notebook==6.1.5" >> requirements.txt && \
     echo "requests==2.28" >> requirements.txt && \
+    echo "scikit-learn==1.3.0" >> requirements.txt && \
     python3 -m pip install --no-warn-script-location -e . && \
     export PATH=$HOME/env_trex/bin:$PATH && \
     jupyter nbextension enable widgetsnbextension --user --py
