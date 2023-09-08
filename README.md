@@ -25,11 +25,11 @@ docker run -it --rm --net=host -v $HOME:$HOME trex:0.1.6 bash
 ## Sample
 
 ```shell
-cd TensorRT/tools/experimental/trt-engine-explorer
+cd TensorRT/tools/experimental/trt-engine-explorer/notebooks
 jupyter lab --ip=0.0.0.0 --no-browser
 ```
 
-Please open `notebooks/api-examples.ipynb` in Jupyter Lab.
+Please open `api-examples.ipynb` in Jupyter Lab.
 
 ![](image/api-examples.png)
 
